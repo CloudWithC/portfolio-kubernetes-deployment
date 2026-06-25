@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M V Cibistha — Cloud &amp; DevOps Engineer (Fresher)</title>
+<meta name="description" content="Portfolio of M V Cibistha, a Computer Science student specializing in Cloud and DevOps Engineering. AWS, Docker, Kubernetes, Terraform, CI/CD.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#hero" class="nav__logo">~/<span class="nav__logo-accent">cibistha</span></a>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#about" class="nav__link"><span class="nav__num">01</span>about</a></li>
+      <li><a href="#skills" class="nav__link"><span class="nav__num">02</span>skills</a></li>
+      <li><a href="#projects" class="nav__link"><span class="nav__num">03</span>projects</a></li>
+      <li><a href="#contact" class="nav__link"><span class="nav__num">04</span>contact</a></li>
+      <li><a href="#contact" class="nav__cta">resume.pdf</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero__grid"></div>
+    <div class="hero__inner">
+      <div class="terminal" id="terminal">
+        <div class="terminal__bar">
+          <div class="terminal__dots"><span></span><span></span><span></span></div>
+          <span class="terminal__title">zsh — bash — 80x24</span>
+        </div>
+        <div class="terminal__body">
+          <pre class="terminal__output" id="terminalOutput" aria-live="polite"></pre>
+          <span class="terminal__cursor" id="terminalCursor">&#9608;</span>
+        </div>
+      </div>
+
+      <div class="hero__content">
+        <p class="eyebrow">Status: <span class="status-dot status-dot--live"></span> open to internships</p>
+        <h1 class="hero__title">
+          M&nbsp;V&nbsp;Cibistha<br>
+          <span class="hero__title-sub">builds &amp; ships infrastructure.</span>
+        </h1>
+        <p class="hero__lede">
+          Third-year CSE student specializing in Cloud and DevOps Engineering.
+          I containerize things, automate the boring parts, and keep deployments boring too &mdash; in a good way.
+        </p>
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary">View deployments <span class="btn__arrow">&rarr;</span></a>
+          <a href="#contact" class="btn btn--ghost">Get in touch</a>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+      <span>scroll</span>
+      <span class="scroll-cue__line"></span>
+    </a>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section about" id="about">
+    <div class="section__inner">
+      <p class="section__eyebrow"><span class="section__num">01</span> about.yaml</p>
+      <div class="about__grid">
+        <div class="about__text">
+          <h2 class="section__title">From "it works on my machine" <br> to "it works everywhere."</h2>
+          <p>
+            I'm a third-year Computer Science &amp; Engineering student based in Tamil Nadu, India,
+            with a focus on cloud infrastructure and DevOps practice rather than just theory.
+            Most of what I know, I learned by breaking my own AWS bill alerts and fixing
+            Kubernetes clusters at 1&nbsp;a.m.
+          </p>
+          <p>
+            I'm currently looking for a <strong>Cloud Engineer, DevOps, or SRE internship</strong> &mdash;
+            remote or based in Tamil Nadu &mdash; where I can take infrastructure problems seriously
+            and write automation that someone other than me can actually read.
+          </p>
+          <div class="about__stats">
+            <div class="stat">
+              <span class="stat__value" data-count="6">0</span>
+              <span class="stat__label">core tools<br>in daily use</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value" data-count="3">0</span>
+              <span class="stat__label">deployed AWS<br>projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value" data-count="3">0</span>
+              <span class="stat__label">years into<br>the CSE degree</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__manifest">
+          <div class="manifest__header">
+            <span class="manifest__dot"></span> profile.yaml
+          </div>
+          <pre class="manifest__body"><span class="y-key">name</span>: <span class="y-val">M V Cibistha</span>
+<span class="y-key">role</span>: <span class="y-val">CSE Student &mdash; Cloud/DevOps track</span>
+<span class="y-key">year</span>: <span class="y-val">3rd year, fresher</span>
+<span class="y-key">location</span>: <span class="y-val">Tamil Nadu, India</span>
+<span class="y-key">seeking</span>:
+  - <span class="y-val">Cloud Engineer Intern</span>
+  - <span class="y-val">DevOps Intern</span>
+  - <span class="y-val">SRE Intern</span>
+<span class="y-key">work_mode</span>: [<span class="y-val">remote</span>, <span class="y-val">tamil-nadu</span>]
+<span class="y-key">availability</span>: <span class="y-val">immediate</span>
+<span class="y-key">status</span>: <span class="y-ok">ACCEPTING_OFFERS</span></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section skills" id="skills">
+    <div class="section__inner">
+      <p class="section__eyebrow"><span class="section__num">02</span> kubectl get skills</p>
+      <h2 class="section__title">Tools I keep in rotation.</h2>
+      <p class="section__sub">Status reflects real, hands-on comfort &mdash; not a checklist of buzzwords.</p>
+
+      <div class="skills__table" role="table" aria-label="Skills status table">
+        <div class="skills__row skills__row--head" role="row">
+          <span role="columnheader">TOOL</span>
+          <span role="columnheader">CATEGORY</span>
+          <span role="columnheader">PROFICIENCY</span>
+          <span role="columnheader">STATUS</span>
+        </div>
+
+        <div class="skills__row" role="row" data-skill="Linux" data-level="85">
+          <span class="skill__name" role="cell"><span class="skill__icon" data-icon="linux"></span>Linux</span>
+          <span class="skill__cat" role="cell">OS / Shell</span>
+          <span class="skill__bar-wrap" role="cell"><span class="skill__bar"></span></span>
+          <span class="skill__status" role="cell"><span class="status-dot status-dot--live"></span>Running</span>
+        </div>
+
+        <div class="skills__row" role="row" data-skill="Docker" data-level="80">
+          <span class="skill__name" role="cell"><span class="skill__icon" data-icon="docker"></span>Docker</span>
+          <span class="skill__cat" role="cell">Containers</span>
+          <span class="skill__bar-wrap" role="cell"><span class="skill__bar"></span></span>
+          <span class="skill__status" role="cell"><span class="status-dot status-dot--live"></span>Running</span>
+        </div>
+
+        <div class="skills__row" role="row" data-skill="Kubernetes" data-level="65">
+          <span class="skill__name" role="cell"><span class="skill__icon" data-icon="k8s"></span>Kubernetes</span>
+          <span class="skill__cat" role="cell">Orchestration</span>
+          <span class="skill__bar-wrap" role="cell"><span class="skill__bar"></span></span>
+          <span class="skill__status" role="cell"><span class="status-dot status-dot--warn"></span>Scaling</span>
+        </div>
+
+        <div class="skills__row" role="row" data-skill="Terraform" data-level="70">
+          <span class="skill__name" role="cell"><span class="skill__icon" data-icon="terraform"></span>Terraform</span>
+          <span class="skill__cat" role="cell">Infra as Code</span>
+          <span class="skill__bar-wrap" role="cell"><span class="skill__bar"></span></span>
+          <span class="skill__status" role="cell"><span class="status-dot status-dot--live"></span>Running</span>
+        </div>
+
+        <div class="skills__row" role="row" data-skill="AWS" data-level="75">
+          <span class="skill__name" role="cell"><span class="skill__icon" data-icon="aws"></span>AWS</span>
+          <span class="skill__cat" role="cell">Cloud Platform</span>
+          <span class="skill__bar-wrap" role="cell"><span class="skill__bar"></span></span>
+          <span class="skill__status" role="cell"><span class="status-dot status-dot--live"></span>Running</span>
+        </div>
+
+        <div class="skills__row" role="row" data-skill="GitHub Actions" data-level="78">
+          <span class="skill__name" role="cell"><span class="skill__icon" data-icon="actions"></span>GitHub Actions</span>
+          <span class="skill__cat" role="cell">CI / CD</span>
+          <span class="skill__bar-wrap" role="cell"><span class="skill__bar"></span></span>
+          <span class="skill__status" role="cell"><span class="status-dot status-dot--live"></span>Running</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section projects" id="projects">
+    <div class="section__inner">
+      <p class="section__eyebrow"><span class="section__num">03</span> git log --deploys</p>
+      <h2 class="section__title">Things I've actually deployed.</h2>
+      <p class="section__sub">Each one taught me something the tutorials skipped.</p>
+
+      <div class="projects__grid">
+
+        <article class="project-card">
+          <div class="project-card__head">
+            <span class="project-card__tag">ci/cd</span>
+            <span class="deploy-badge deploy-badge--ok">deployed</span>
+          </div>
+          <h3 class="project-card__title">CI/CD Docker Deployment on AWS</h3>
+          <p class="project-card__desc">
+            Automated the full deployment lifecycle &mdash; Docker image build, ECR push, and EC2 deploy &mdash;
+            via GitHub Actions, eliminating ~8 manual steps and reducing ~15 minutes of deployment time to a
+            single <code>git push</code>. Configured Nginx as a reverse proxy on a Linux EC2 instance to route
+            HTTPS traffic on port 443 to the containerized app on port 3000, with the pipeline triggering on
+            every push for zero-touch continuous delivery.
+          </p>
+          <ul class="project-card__stack">
+            <li>Docker</li><li>Amazon ECR</li><li>AWS EC2</li><li>GitHub Actions</li><li>Nginx</li><li>Linux</li><li>Git</li>
+          </ul>
+          <div class="project-card__links">
+            <a href="https://github.com/CloudWithC/cicd-docker-aws" class="card-link" target="_blank" rel="noopener">Code <span>&rarr;</span></a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__head">
+            <span class="project-card__tag">infra-as-code</span>
+            <span class="deploy-badge deploy-badge--ok">deployed</span>
+          </div>
+          <h3 class="project-card__title">Infrastructure Automation using Terraform on AWS</h3>
+          <p class="project-card__desc">
+            Provisioned 5 AWS resources (EC2, Security Groups, IAM Role, IAM Policy, VPC) through a single
+            Terraform configuration, eliminating 100% of manual AWS Console setup. Managed IAM permissions
+            and cloud resource policies through version-controlled HCL files for repeatable, auditable,
+            peer-reviewable infra changes, and executed the full Terraform lifecycle (init &rarr; plan &rarr;
+            apply &rarr; destroy), resolving IAM permission conflicts along the way.
+          </p>
+          <ul class="project-card__stack">
+            <li>Terraform</li><li>AWS IAM</li><li>Security Groups</li><li>AWS EC2</li><li>VPC</li><li>IaC</li><li>Git</li>
+          </ul>
+          <div class="project-card__links">
+            <a href="https://github.com/CloudWithC/terraform-aws-infra" class="card-link" target="_blank" rel="noopener">Code <span>&rarr;</span></a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__head">
+            <span class="project-card__tag">serverless</span>
+            <span class="deploy-badge deploy-badge--ok">deployed</span>
+          </div>
+          <h3 class="project-card__title">Serverless Message Application on AWS</h3>
+          <p class="project-card__desc">
+            Architected and deployed a fully serverless stack across 4 AWS services (Lambda, API Gateway,
+            DynamoDB, S3) with zero server management overhead and sub-second API response times. Built a
+            Python-based REST API on Lambda to process user messages and persist structured data to DynamoDB
+            with proper error handling and JSON formatting, and hosted the static frontend on S3 with
+            GitHub Actions automating every release.
+          </p>
+          <ul class="project-card__stack">
+            <li>AWS Lambda</li><li>API Gateway</li><li>DynamoDB</li><li>Amazon S3</li><li>GitHub Actions</li><li>Python</li><li>JavaScript</li>
+          </ul>
+          <div class="project-card__links">
+            <a href="https://github.com/CloudWithC/serverless-message-app" class="card-link" target="_blank" rel="noopener">Code <span>&rarr;</span></a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__head">
+            <span class="project-card__tag">orchestration</span>
+            <span class="deploy-badge deploy-badge--ok">deployed</span>
+          </div>
+          <h3 class="project-card__title">Kubernetes Portfolio Deployment</h3>
+          <p class="project-card__desc">
+            Containerized and deployed this very portfolio on a Kubernetes cluster, defining Deployments
+            and Services as version-controlled manifests for a repeatable, self-healing deployment path
+            beyond a single static host.
+          </p>
+          <ul class="project-card__stack">
+            <li>Kubernetes</li><li>Docker</li><li>YAML</li><li>Git</li>
+          </ul>
+          <div class="project-card__links">
+            <a href="https://github.com/CloudWithC/kubernetes-portfolio-deployment" class="card-link" target="_blank" rel="noopener">Code <span>&rarr;</span></a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact" id="contact">
+    <div class="section__inner">
+      <p class="section__eyebrow"><span class="section__num">04</span> POST /contact</p>
+      <h2 class="section__title">Let's ship something together.</h2>
+      <p class="section__sub">
+        Have an internship opening or a project that needs an extra pair of hands? Send a request below.
+      </p>
+
+      <div class="contact__grid">
+        <form class="contact__form" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">name</label>
+            <input type="text" id="name" name="name" placeholder="your name" required>
+            <span class="field__error" id="nameError"></span>
+          </div>
+          <div class="field">
+            <label for="email">email</label>
+            <input type="email" id="email" name="email" placeholder="you@company.com" required>
+            <span class="field__error" id="emailError"></span>
+          </div>
+          <div class="field">
+            <label for="message">message</label>
+            <textarea id="message" name="message" rows="5" placeholder="tell me about the role or project..." required></textarea>
+            <span class="field__error" id="messageError"></span>
+          </div>
+          <button type="submit" class="btn btn--primary btn--block" id="submitBtn">
+            <span id="submitText">Send message</span>
+          </button>
+          <p class="contact__response" id="formResponse" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="contact__side">
+          <a class="contact__link" href="mailto:mvcibistha@gmail.com">
+            <span class="contact__link-label">email</span>
+            <span class="contact__link-value">mvcibistha@gmail.com</span>
+          </a>
+          <a class="contact__link" href="https://github.com/CloudWithC" target="_blank" rel="noopener">
+            <span class="contact__link-label">github</span>
+            <span class="contact__link-value">github.com/CloudWithC</span>
+          </a>
+          <a class="contact__link" href="https://www.linkedin.com/in/mvcibistha" target="_blank" rel="noopener">
+            <span class="contact__link-label">linkedin</span>
+            <span class="contact__link-value">linkedin.com/in/mvcibistha</span>
+          </a>
+          <a class="contact__link" href="#" target="_blank" rel="noopener">
+            <span class="contact__link-label">location</span>
+            <span class="contact__link-value">Tamil Nadu, India</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <span>&copy; <span id="year"></span> M V Cibistha.</span>
+    <span class="footer__build">build: passing <span class="status-dot status-dot--live"></span></span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
