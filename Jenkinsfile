@@ -9,5 +9,10 @@ pipeline {
             }
         }
 
+        stage('Build Docker Image') {
+            steps {
+                sh 'docker build -t portfolio:v1 .'
+            }
+        }
     }
 }
